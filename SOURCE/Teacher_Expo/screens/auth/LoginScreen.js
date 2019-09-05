@@ -52,7 +52,11 @@ export default class LoginScreen extends Component {
                 marginTop: 50
               }}
             >
-              <Text>{I18n.t("login")}</Text>
+              <Text
+                style={[Theme.fonts.medium18, { color: Theme.colors.white, fontWeight:'bold' }]}
+              >
+                {I18n.t("login")}
+              </Text>
             </LinearGradient>
           </TouchableOpacity>
         </ScrollView>
@@ -82,9 +86,11 @@ const style = StyleSheet.create({
   },
   tvInput: {
     width: "90%",
-    borderWidth: 0.4,
+    borderWidth: 1,
     borderColor: Theme.colors.borderLogin,
-    padding: 10
+    padding: 10,
+    borderRadius: 6,
+    backgroundColor: Theme.colors.bottombarBg
     //   marginTop:30
   }
 });

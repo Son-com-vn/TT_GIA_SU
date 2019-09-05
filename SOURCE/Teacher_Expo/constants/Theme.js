@@ -8,7 +8,7 @@ const colors = {
     primary: "#f3f3f3",
     primaryDark: "#F6CB26",
     primaryDark1: "#2E384D",
-    bottombarBg: '##F7F7F7',
+    bottombarBg: '#F7F7F7',
     active: '#2E5BFF',
     inactive: 'gray',
     indicator: "#ff3b00",
@@ -146,6 +146,16 @@ const fonts = {
         fontSize: 12,
         lineHeight: 15
     },
+    medium22: {
+        fontFamily: 'roboto-medium',
+        fontSize: 22,
+        lineHeight: 25
+    },
+    medium18: {
+        fontFamily: 'roboto-medium',
+        fontSize: 18,
+        lineHeight: 25
+    },
     medium15: {
         fontFamily: 'roboto-medium',
         fontSize: 15,
@@ -214,7 +224,7 @@ const styles = StyleSheet.create({
 
     containter: {
         flex: 1,
-        backgroundColor: colors.primary
+        backgroundColor: colors.white
     },
 
     menu: {

@@ -44,7 +44,9 @@ export default class App extends React.Component {
     return Promise.all([
       Asset.loadAsync([
         require('./assets/images/robot-dev.png'),
-        require('./assets/images/bg_img.png')
+        require('./assets/images/bg_img.png'),
+        require('./assets/images/calender.png'),
+       
       ]),
       Font.loadAsync({
         ...Icon.SimpleLineIcons.font,

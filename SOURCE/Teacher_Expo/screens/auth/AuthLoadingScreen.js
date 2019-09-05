@@ -56,11 +56,11 @@ export default class AuthLoadingScreen extends Component {
     // Fetch the token from storage then navigate to our appropriate place
     _bootstrapAsync = async () => {
         const userToken = await AsyncStorage.getItem('token');
-        if (userToken) {
-            NavigationUtil.navigate(SCREEN_ROUTER.MAIN)
-        } else {
+        // if (userToken) {
+        //     NavigationUtil.navigate(SCREEN_ROUTER.MAIN)
+        // } else {
             NavigationUtil.navigate(SCREEN_ROUTER.AUTH)
-        }
+        // }
     };
 
     // Render any loading content that you like here
